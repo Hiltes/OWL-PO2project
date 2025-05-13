@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\CreateEventForm.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OWL\\Forms\\CreateEventForm.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\OWL.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OWL\\OWL.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\CreateEventForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OWL\\Forms\\CreateEventForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\CreateEventForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OWL\\Forms\\CreateEventForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MainPage.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OWL\\Forms\\MainPage.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MyEventsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OWL\\Forms\\MyEventsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MyEventsForm.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OWL\\Forms\\MyEventsForm.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateEventForm.resx",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\CreateEventForm.resx",
+              "RelativeDocumentMoniker": "OWL\\Forms\\CreateEventForm.resx",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\CreateEventForm.resx",
+              "RelativeToolTip": "OWL\\Forms\\CreateEventForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-13T19:01:52.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OWL.csproj",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\OWL.csproj",
+              "RelativeDocumentMoniker": "OWL\\OWL.csproj",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\OWL.csproj",
+              "RelativeToolTip": "OWL\\OWL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-13T19:01:44.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateEventForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\CreateEventForm.Designer.cs",
+              "RelativeDocumentMoniker": "OWL\\Forms\\CreateEventForm.Designer.cs",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\CreateEventForm.Designer.cs",
+              "RelativeToolTip": "OWL\\Forms\\CreateEventForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T19:01:37.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateEventForm.cs",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\CreateEventForm.cs",
+              "RelativeDocumentMoniker": "OWL\\Forms\\CreateEventForm.cs",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\CreateEventForm.cs",
+              "RelativeToolTip": "OWL\\Forms\\CreateEventForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T19:01:35.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyEventsForm.cs",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MyEventsForm.cs",
+              "RelativeDocumentMoniker": "OWL\\Forms\\MyEventsForm.cs",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MyEventsForm.cs",
+              "RelativeToolTip": "OWL\\Forms\\MyEventsForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T19:01:23.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainPage.resx",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MainPage.resx",
+              "RelativeDocumentMoniker": "OWL\\Forms\\MainPage.resx",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MainPage.resx",
+              "RelativeToolTip": "OWL\\Forms\\MainPage.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-13T19:01:21.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MyEventsForm.resx",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MyEventsForm.resx",
+              "RelativeDocumentMoniker": "OWL\\Forms\\MyEventsForm.resx",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MyEventsForm.resx",
+              "RelativeToolTip": "OWL\\Forms\\MyEventsForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-13T19:01:17.872Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
