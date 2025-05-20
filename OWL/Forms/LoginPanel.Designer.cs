@@ -1,8 +1,10 @@
 ﻿
 namespace OWL
 {
-    partial class LoginPanel
+    partial class LoginPanel : Form
     {
+
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -61,6 +63,7 @@ namespace OWL
             LoginButton.TabIndex = 0;
             LoginButton.Text = "Zaloguj";
             LoginButton.UseVisualStyleBackColor = false;
+            LoginButton.Click += LoginButton_Click;
             // 
             // LoginBox
             // 
@@ -69,7 +72,7 @@ namespace OWL
             LoginBox.Name = "LoginBox";
             LoginBox.Size = new Size(355, 40);
             LoginBox.TabIndex = 1;
-            LoginBox.TextChanged += textBox1_TextChanged;
+            LoginBox.TextChanged += ValidateFields;
             // 
             // PasswordBox
             // 
@@ -78,6 +81,7 @@ namespace OWL
             PasswordBox.Name = "PasswordBox";
             PasswordBox.Size = new Size(355, 40);
             PasswordBox.TabIndex = 2;
+            PasswordBox.Click += ValidateFields;
             // 
             // LoginLabel
             // 
@@ -89,7 +93,7 @@ namespace OWL
             LoginLabel.Size = new Size(89, 37);
             LoginLabel.TabIndex = 3;
             LoginLabel.Text = "Login";
-            LoginLabel.Click += label1_Click;
+           
             // 
             // PasswordLabel
             // 
@@ -101,7 +105,7 @@ namespace OWL
             PasswordLabel.Size = new Size(90, 37);
             PasswordLabel.TabIndex = 4;
             PasswordLabel.Text = "Hasło";
-            PasswordLabel.Click += label2_Click;
+          
             // 
             // WelcomeLabel1
             // 
@@ -113,7 +117,7 @@ namespace OWL
             WelcomeLabel1.Size = new Size(329, 46);
             WelcomeLabel1.TabIndex = 5;
             WelcomeLabel1.Text = "WITAJ W OWL";
-            WelcomeLabel1.Click += label3_Click;
+            
             // 
             // label4
             // 
@@ -124,7 +128,7 @@ namespace OWL
             label4.Name = "label4";
             label4.Size = new Size(0, 42);
             label4.TabIndex = 6;
-            label4.Click += label4_Click;
+            
             // 
             // WelcomeLabel2
             // 
@@ -165,7 +169,7 @@ namespace OWL
             LogToRegisterButon.TabIndex = 10;
             LogToRegisterButon.Text = "Rejestracja";
             LogToRegisterButon.UseVisualStyleBackColor = true;
-            LogToRegisterButon.Click += this.ToRegButtonClick;
+            LogToRegisterButon.Click += ToRegButtonClick;
             // 
             // WelcomeLabel3
             // 
@@ -209,7 +213,6 @@ namespace OWL
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "LoginPanel";
             Text = "OWL";
-            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)UpDesignElem).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)DownDesignElem).EndInit();

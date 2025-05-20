@@ -1,67 +1,35 @@
+using System.Text.RegularExpressions;
 using OWL.Forms;
+using OWL.Services;
 
 namespace OWL
 {
     public partial class LoginPanel : Form
     {
+
+        private readonly AuthService _authService;
+
         public LoginPanel()
         {
             InitializeComponent();
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-        }
+            _authService = new AuthService();
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void LoginToServ()
-        {
-
+            LoginButton.Click += LoginButton_Click;
+            LoginBox.TextChanged += ValidateFields;
+            PasswordBox.TextChanged += ValidateFields;
         }
 
         private void ToRegButtonClick(object sender, EventArgs e)
         {
 
             var currentLocation = this.Location;
-            // Zamknij bie¿¹cy formularz logowania
+            
             this.Hide();
 
 
-            // Otwórz formularz Rejestracji
+            
             var Registerform = new RegisterPanel();
 
             Registerform.StartPosition = FormStartPosition.Manual;
@@ -70,5 +38,95 @@ namespace OWL
             Registerform.Closed += (s, args) => this.Close();
             Registerform.Show();
         }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            if (!ValidateLoginFields()) return;
+
+            try
+            {
+                bool access = _authService.LoginUser(LoginBox.Text.Trim(), PasswordBox.Text);
+
+                if (access)
+                {
+                    MessageBox.Show("Witaj w OWL! Zalogowano pomyœlnie!", "Sukces",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearForm();
+                    AccesGranted(sender, e);
+                   
+                }
+                else
+                {
+                    HandleFailedLogin(LoginBox.Text.Trim());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Wyst¹pi³ b³¹d: {ex.Message}", "B³¹d",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool ValidateLoginFields()
+        {
+            if (string.IsNullOrWhiteSpace(LoginBox.Text) || LoginBox.Text.Length < 4)
+            {
+                return false;
+            }
+
+            if (PasswordBox.Text.Length < 8)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        private void HandleFailedLogin(string username)
+        {
+            if (_authService.CheckUser(username))
+            {
+                MessageBox.Show("Niepoprawne has³o", "B³¹d logowania",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Nie znaleziono u¿ytkownika", "B³¹d logowania",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void ClearForm()
+        {
+            LoginBox.Text = string.Empty;
+            PasswordBox.Text = string.Empty;
+        }
+
+        private void ValidateFields(object sender, EventArgs e)
+        {
+            
+            bool loginValid = !string.IsNullOrWhiteSpace(LoginBox.Text) && LoginBox.Text.Length >= 4;
+            bool passwordValid = PasswordBox.Text.Length >= 8;
+
+            LoginButton.Enabled = loginValid && passwordValid;
+        }
+
+        private void AccesGranted(object sender, EventArgs e)
+        {
+            var currentLocation = this.Location;
+            this.Hide();
+
+            var loginForm = new MainPage();
+            loginForm.StartPosition = FormStartPosition.Manual;
+            loginForm.Location = currentLocation;
+            loginForm.Closed += (s, args) => this.Close();
+            loginForm.Show();
+        }
+
+
+
     }
+
+
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\OWL.csproj": {}
+    "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\OWL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\OWL.csproj": {
+    "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\OWL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\OWL.csproj",
+        "projectUniqueName": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\OWL.csproj",
         "projectName": "OWL",
-        "projectPath": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\OWL.csproj",
+        "projectPath": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\OWL.csproj",
         "packagesPath": "C:\\Users\\iktom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\obj\\",
+        "outputPath": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,30 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

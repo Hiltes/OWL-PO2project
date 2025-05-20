@@ -1,46 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\",
+  "WorkspaceRootPath": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\owlproject\\owl-po2project\\owl\\forms\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\forms\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\projects\\owl-po2project\\owl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\owl\\forms\\registerpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\forms\\registerpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\projects\\owl-po2project\\owl\\models\\owldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\models\\owldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\owlproject\\owl-po2project\\owl\\forms\\myeventsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\projects\\owl-po2project\\owl\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\projects\\owl-po2project\\owl\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\projects\\owl-po2project\\owl\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\projects\\owl-po2project\\owl\\forms\\myeventsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\forms\\myeventsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\owl\\forms\\loginpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\forms\\loginpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\owlproject\\owl-po2project\\owl\\forms\\eventdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\projects\\owl-po2project\\owl\\forms\\eventdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\forms\\eventdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\owlproject\\owl-po2project\\owl\\forms\\createeventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\forms\\createeventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\projects\\owl-po2project\\owl\\forms\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\forms\\userpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\owlproject\\owl-po2project\\owl\\forms\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\projects\\owl-po2project\\owl\\forms\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\forms\\mainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\owlproject\\owl-po2project\\owl\\forms\\registerpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\forms\\registerpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\owlproject\\owl-po2project\\owl\\forms\\loginpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\forms\\loginpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|c:\\users\\iktom\\desktop\\owlproject\\owl-po2project\\owl\\forms\\loginpanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31D9D692-C5AA-4AC5-A6CF-36BDBC7C3E45}|OWL\\OWL.csproj|solutionrelative:owl\\forms\\loginpanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,126 +54,116 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserPage.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\UserPage.cs",
-              "RelativeDocumentMoniker": "OWL\\Forms\\UserPage.cs",
-              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\UserPage.cs [Projekt]",
-              "RelativeToolTip": "OWL\\Forms\\UserPage.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T19:04:16.788Z",
-              "EditorCaption": " [Projekt]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyEventsForm.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MyEventsForm.cs",
-              "RelativeDocumentMoniker": "OWL\\Forms\\MyEventsForm.cs",
-              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MyEventsForm.cs [Projekt]",
-              "RelativeToolTip": "OWL\\Forms\\MyEventsForm.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T19:04:15.332Z",
-              "EditorCaption": " [Projekt]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainPage.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MainPage.cs",
-              "RelativeDocumentMoniker": "OWL\\Forms\\MainPage.cs",
-              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\MainPage.cs [Projekt]",
-              "RelativeToolTip": "OWL\\Forms\\MainPage.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T19:03:52.937Z",
-              "EditorCaption": " [Projekt]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EventDetailsForm.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\EventDetailsForm.cs",
-              "RelativeDocumentMoniker": "OWL\\Forms\\EventDetailsForm.cs",
-              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\EventDetailsForm.cs [Projekt]",
-              "RelativeToolTip": "OWL\\Forms\\EventDetailsForm.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T19:03:44.941Z",
-              "EditorCaption": " [Projekt]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateEventForm.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\CreateEventForm.cs",
-              "RelativeDocumentMoniker": "OWL\\Forms\\CreateEventForm.cs",
-              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\CreateEventForm.cs [Projekt]",
-              "RelativeToolTip": "OWL\\Forms\\CreateEventForm.cs [Projekt]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T19:03:40.074Z",
-              "EditorCaption": " [Projekt]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RegisterPanel.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\RegisterPanel.cs",
-              "RelativeDocumentMoniker": "OWL\\Forms\\RegisterPanel.cs",
-              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\RegisterPanel.cs [Projekt]",
-              "RelativeToolTip": "OWL\\Forms\\RegisterPanel.cs [Projekt]",
+              "Title": "OwlDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Models\\OwlDbContext.cs",
+              "RelativeDocumentMoniker": "OWL\\Models\\OwlDbContext.cs",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Models\\OwlDbContext.cs",
+              "RelativeToolTip": "OWL\\Models\\OwlDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:49:21.384Z",
-              "EditorCaption": " [Projekt]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegisterPanel.cs",
-              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\RegisterPanel.cs",
-              "RelativeDocumentMoniker": "OWL\\Forms\\RegisterPanel.cs",
-              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\RegisterPanel.cs",
-              "RelativeToolTip": "OWL\\Forms\\RegisterPanel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:49:22.747Z",
+              "WhenOpened": "2025-05-20T17:20:38.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginPanel.cs",
-              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\LoginPanel.cs",
-              "RelativeDocumentMoniker": "OWL\\Forms\\LoginPanel.cs",
-              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\LoginPanel.cs",
-              "RelativeToolTip": "OWL\\Forms\\LoginPanel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\appsettings.json",
+              "RelativeDocumentMoniker": "OWL\\appsettings.json",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\appsettings.json",
+              "RelativeToolTip": "OWL\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T20:38:58.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Services\\EventService.cs",
+              "RelativeDocumentMoniker": "OWL\\Services\\EventService.cs",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Services\\EventService.cs",
+              "RelativeToolTip": "OWL\\Services\\EventService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:48:28.584Z",
+              "WhenOpened": "2025-05-20T17:21:10.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LoginPanel.cs [Projekt]",
-              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\LoginPanel.cs",
-              "RelativeDocumentMoniker": "OWL\\Forms\\LoginPanel.cs",
-              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\LoginPanel.cs [Projekt]",
-              "RelativeToolTip": "OWL\\Forms\\LoginPanel.cs [Projekt]",
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "OWL\\Models\\Event.cs",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Models\\Event.cs",
+              "RelativeToolTip": "OWL\\Models\\Event.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIAwwBAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:46:57.604Z",
+              "WhenOpened": "2025-05-20T17:18:56.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\App.config",
+              "RelativeDocumentMoniker": "OWL\\App.config",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\App.config",
+              "RelativeToolTip": "OWL\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-20T18:25:58.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyEventsForm.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Forms\\MyEventsForm.cs",
+              "RelativeDocumentMoniker": "OWL\\Forms\\MyEventsForm.cs",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Forms\\MyEventsForm.cs [Projekt]",
+              "RelativeToolTip": "OWL\\Forms\\MyEventsForm.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:02:58.677Z",
               "EditorCaption": " [Projekt]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginPanel.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\LoginPanel.Designer.cs",
-              "RelativeDocumentMoniker": "OWL\\Forms\\LoginPanel.Designer.cs",
-              "ToolTip": "C:\\Users\\iktom\\Desktop\\OWLProject\\OWL-PO2project\\OWL\\Forms\\LoginPanel.Designer.cs",
-              "RelativeToolTip": "OWL\\Forms\\LoginPanel.Designer.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAiwMUAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "EventDetailsForm.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Forms\\EventDetailsForm.cs",
+              "RelativeDocumentMoniker": "OWL\\Forms\\EventDetailsForm.cs",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Forms\\EventDetailsForm.cs [Projekt]",
+              "RelativeToolTip": "OWL\\Forms\\EventDetailsForm.cs [Projekt]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T18:46:54.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T17:03:08.222Z",
+              "EditorCaption": " [Projekt]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserPage.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Forms\\UserPage.cs",
+              "RelativeDocumentMoniker": "OWL\\Forms\\UserPage.cs",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Forms\\UserPage.cs [Projekt]",
+              "RelativeToolTip": "OWL\\Forms\\UserPage.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:02:57.042Z",
+              "EditorCaption": " [Projekt]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainPage.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Forms\\MainPage.cs",
+              "RelativeDocumentMoniker": "OWL\\Forms\\MainPage.cs",
+              "ToolTip": "C:\\Users\\iktom\\Desktop\\Projects\\OWL-PO2project\\OWL\\Forms\\MainPage.cs [Projekt]",
+              "RelativeToolTip": "OWL\\Forms\\MainPage.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:02:59.58Z",
+              "EditorCaption": " [Projekt]"
             }
           ]
         }
