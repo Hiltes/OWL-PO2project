@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-
 namespace OWL.Models
 {
     public class Event
@@ -11,21 +10,21 @@ namespace OWL.Models
 
         [Required]
         [StringLength(100)]
-        public string Title { get; set; }
+        public required string Title { get; set; }
 
         [Required]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [Required]
-        public DateTime Date { get; set; }
+        public string? Date { get; set; }  
 
         [Required]
-        public string Location { get; set; }
+        public string? Location { get; set; }
 
         [ForeignKey("OrganizerId")]
         public User Organizer { get; set; }
         public int OrganizerId { get; set; }
 
-        public ICollection<Participation> Participants { get; set; }
+        public ICollection<Participation>? Participants { get; set; }
     }
 }

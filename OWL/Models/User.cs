@@ -10,14 +10,17 @@ namespace OWL.Models
 
         [Required]
         [StringLength(50)]
-        public string Username { get; set; }
+        public required string Username { get; set; }
 
         [Required]
         [EmailAddress]
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
         [Required]
         [StringLength(100, MinimumLength = 8)]
-        public string PasswordHash { get; set; }
+        public required string PasswordHash { get; set; }
+
+        public ICollection<Event> OrganizedEvents { get; set; } = new List<Event>();
+        public ICollection<Participation> Participations { get; set; } = new List<Participation>();
     }
 }

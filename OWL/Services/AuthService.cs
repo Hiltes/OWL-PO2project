@@ -47,6 +47,7 @@ namespace OWL.Services
         }
 
 
+
         public bool CheckUser(string username)
         {
             try
@@ -66,7 +67,5 @@ namespace OWL.Services
         {
             return _context.Users.FirstOrDefault(u => u.Username == username);
         }
-
-
     }
 }

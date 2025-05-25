@@ -155,3 +155,5 @@ C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\refi
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.pdb
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.genruntimeconfig.cache
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\ref\OWL.dll
+C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.Properties.Resources.resources
+C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.Forms.Calendar.resources

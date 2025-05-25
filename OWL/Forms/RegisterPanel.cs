@@ -33,9 +33,12 @@ namespace OWL.Forms
             {
                 bool success = _authService.RegisterUser( LoginBox.Text.Trim(), EmailBox.Text.Trim(), PasswordBox.Text );
 
+
                 if (success)
                 {
                     MessageBox.Show("Rejestracja zakończona pomyślnie!", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                
 
                     ClearForm();
 

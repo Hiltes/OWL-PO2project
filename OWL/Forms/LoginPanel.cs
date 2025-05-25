@@ -1,6 +1,9 @@
 using System.Text.RegularExpressions;
 using OWL.Forms;
+using OWL.Models;
 using OWL.Services;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace OWL
 {
@@ -49,8 +52,9 @@ namespace OWL
 
                 if (access)
                 {
-                    MessageBox.Show("Witaj w OWL! Zalogowano pomyœlnie!", "Sukces",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Session.Instance.Login(LoginBox.Text.Trim());
+                    MessageBox.Show("Witaj w OWL! Zalogowano pomyœlnie!", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     ClearForm();
                     AccesGranted(sender, e);
                    
@@ -123,6 +127,8 @@ namespace OWL
             loginForm.Closed += (s, args) => this.Close();
             loginForm.Show();
         }
+
+
 
 
 
