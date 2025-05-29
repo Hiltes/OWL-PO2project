@@ -15,10 +15,9 @@ namespace OWL.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                var configuration = new ConfigurationBuilder()
-    .SetBasePath(Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.FullName)
-    .AddJsonFile("appsettings.json")
-    .Build();
+                var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.FullName)
+                .AddJsonFile("appsettings.json")
+                .Build();
 
                 optionsBuilder.UseNpgsql(configuration.GetConnectionString("OwlDatabase"))
                    .EnableSensitiveDataLogging()
