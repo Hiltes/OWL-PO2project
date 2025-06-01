@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore;
 using OWL.Models;
 using OWL.Services;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace OWL.Forms
 {
@@ -19,8 +20,10 @@ namespace OWL.Forms
     {
 
         private readonly EventService _eventService;
+        private readonly OwlDbContext _db = new OwlDbContext();
 
-
+        int EventId;
+        Event? thisEvent;
 
         public CreateEventForm()
         {
@@ -37,6 +40,25 @@ namespace OWL.Forms
 
         }
 
+        public CreateEventForm(int ID)
+        {
+            InitializeComponent();
+
+            _eventService = new EventService();
+
+            textBox1.TextChanged += EnableBtn;
+            DescBoxCEF.TextChanged += EnableBtn;
+            LocBox.TextChanged += EnableBtn;
+            DaBox.TextChanged += EnableBtn;
+            EventId = ID;
+            thisEvent = _db.Events.FirstOrDefault(ev => ev.EventId == this.EventId);
+            ActivateDel_Btn();
+            AddToFields();
+
+
+        }
+
+
         private void CEFMainLabel_Click(object sender, EventArgs e)
         {
 
@@ -44,6 +66,15 @@ namespace OWL.Forms
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            if (WithoutLocCheckbox.Checked)
+            {
+                LocBox.Text = "Wydarzenie zdalne";
+                LocBox.Enabled = false;
+            }
+            else
+            {
+                LocBox.Enabled = true;
+            }
 
         }
 
@@ -88,23 +119,54 @@ namespace OWL.Forms
                         return;
                     }
 
-                    bool result = _eventService.NewEvent(
-                        textBox1.Text.Trim(),
-                        DescBoxCEF.Text.Trim(),
-                        DaBox.Text.Trim(),
-                        LocBox.Text.Trim(),
-                        freshUser); 
-
-                    if (result)
+                    if (EventId == 0)
                     {
-                        MessageBox.Show("Wydarzenie zostało utworzone!", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ClearForm();
-                        this.Close();
+
+                        bool result = _eventService.NewEvent(
+                            textBox1.Text.Trim(),
+                            DescBoxCEF.Text.Trim(),
+                            DaBox.Text.Trim(),
+                            LocBox.Text.Trim(),
+                            freshUser);
+
+                        if (result)
+                        {
+                            MessageBox.Show("Wydarzenie zostało utworzone!", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ClearForm();
+
+
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Wydarzenie o podanej nazwie już istnieje", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Wydarzenie o podanej nazwie już istnieje", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        bool result2 = _eventService.EditEvent(
+                            textBox1.Text.Trim(),
+                            DescBoxCEF.Text.Trim(),
+                            DaBox.Text.Trim(),
+                            LocBox.Text.Trim(),
+                            freshUser, thisEvent);
+
+
+                        if (result2)
+                        {
+                            MessageBox.Show("Zmiany Wprowadzone!", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.DialogResult = DialogResult.OK;
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Wystąpił błąd podczas edycji", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+
+
                     }
+
+
                 }
             }
             catch (DbUpdateException dbEx)
@@ -163,6 +225,40 @@ namespace OWL.Forms
             DescBoxCEF.Text = string.Empty;
             LocBox.Text = string.Empty;
             DaBox.Text = string.Empty;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DelBtn_Click(object sender, EventArgs e)
+        {
+            _db.Events.Remove(thisEvent);
+            _db.SaveChanges();
+            MessageBox.Show("Usunięto Wydarzenie!","Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            CreateEventForm.ActiveForm.Close();        }
+
+        private void ActivateDel_Btn()
+        {
+            if(EventId != 0)
+            {
+                DelBtn.Enabled = true;
+            }
+
+        }
+        private void AddToFields()
+        {
+            textBox1.Text = thisEvent.Title.Trim();
+            DescBoxCEF.Text = thisEvent.Description.Trim();
+            LocBox.Text = thisEvent.Location.Trim();
+            DaBox.Text = thisEvent.Date;
+            if(LocBox.Text == "Wydarzenie zdalne")
+            {
+                WithoutLocCheckbox.Checked = true;
+                LocBox.Enabled = false;
+            }
+
         }
     }
 }

@@ -16,7 +16,6 @@ namespace OWL.Forms
             InitializeComponent();
             _authService = new AuthService();
 
-            // Podpięcie pól teksowych
             RegisterButton.Click += RegisterButton_Click;
             EmailBox.TextChanged += ValidateFields;
             LoginBox.TextChanged += ValidateFields;
@@ -93,7 +92,6 @@ namespace OWL.Forms
 
         private void ValidateFields(object sender, EventArgs e)
         {
-            // Włącz przycisk rejestracji tylko gdy wszystkie pola są poprawne
             bool emailValid = Regex.IsMatch(EmailBox.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
             bool loginValid = !string.IsNullOrWhiteSpace(LoginBox.Text) && LoginBox.Text.Length >= 4;
             bool passwordValid = PasswordBox.Text.Length >= 8;

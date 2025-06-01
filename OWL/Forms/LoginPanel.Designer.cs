@@ -79,9 +79,11 @@ namespace OWL
             PasswordBox.Font = new Font("Verdana", 18.3396225F, FontStyle.Bold, GraphicsUnit.Point, 238);
             PasswordBox.Location = new Point(132, 267);
             PasswordBox.Name = "PasswordBox";
+            PasswordBox.PasswordChar = '*';
             PasswordBox.Size = new Size(355, 40);
             PasswordBox.TabIndex = 2;
             PasswordBox.Click += ValidateFields;
+            PasswordBox.TextChanged += PasswordBox_TextChanged;
             // 
             // LoginLabel
             // 
@@ -93,7 +95,6 @@ namespace OWL
             LoginLabel.Size = new Size(89, 37);
             LoginLabel.TabIndex = 3;
             LoginLabel.Text = "Login";
-           
             // 
             // PasswordLabel
             // 
@@ -105,7 +106,6 @@ namespace OWL
             PasswordLabel.Size = new Size(90, 37);
             PasswordLabel.TabIndex = 4;
             PasswordLabel.Text = "Hasło";
-          
             // 
             // WelcomeLabel1
             // 
@@ -117,7 +117,6 @@ namespace OWL
             WelcomeLabel1.Size = new Size(329, 46);
             WelcomeLabel1.TabIndex = 5;
             WelcomeLabel1.Text = "WITAJ W OWL";
-            
             // 
             // label4
             // 
@@ -128,7 +127,6 @@ namespace OWL
             label4.Name = "label4";
             label4.Size = new Size(0, 42);
             label4.TabIndex = 6;
-            
             // 
             // WelcomeLabel2
             // 

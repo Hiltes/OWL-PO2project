@@ -16,7 +16,6 @@ namespace OWL.Models
         public Event Event { get; set; }
         public int EventId { get; set; }
 
-        public DateTime RegistrationDate { get; set; }
-
+        public DateTimeOffset RegistrationDate { get; set; }
     }
 }

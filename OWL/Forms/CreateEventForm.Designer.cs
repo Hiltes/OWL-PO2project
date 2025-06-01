@@ -42,6 +42,7 @@
             LocBox = new TextBox();
             DescBoxCEF = new TextBox();
             CrtEVBtm = new Button();
+            DelBtn = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
@@ -56,9 +57,9 @@
             CEFMainLabel.ForeColor = Color.White;
             CEFMainLabel.Location = new Point(338, 21);
             CEFMainLabel.Name = "CEFMainLabel";
-            CEFMainLabel.Size = new Size(421, 34);
+            CEFMainLabel.Size = new Size(412, 34);
             CEFMainLabel.TabIndex = 0;
-            CEFMainLabel.Text = "Stwórz swoje wydarzenie";
+            CEFMainLabel.Text = "Edytuj swoje wydarzenie";
             CEFMainLabel.Click += CEFMainLabel_Click;
             // 
             // panel1
@@ -68,6 +69,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1049, 78);
             panel1.TabIndex = 1;
+            panel1.Paint += panel1_Paint;
             // 
             // WithoutLocCheckbox
             // 
@@ -163,6 +165,7 @@
             DaBox.Name = "DaBox";
             DaBox.Size = new Size(200, 40);
             DaBox.TabIndex = 4;
+            DaBox.TextAlign = HorizontalAlignment.Center;
             DaBox.TextChanged += EnableBtn;
             // 
             // OpnCalBtn
@@ -182,6 +185,7 @@
             // 
             textBox1.BackColor = Color.FromArgb(105, 100, 135);
             textBox1.Font = new Font("Verdana", 8.150944F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            textBox1.ForeColor = Color.White;
             textBox1.Location = new Point(8, 3);
             textBox1.MaximumSize = new Size(650, 40);
             textBox1.MinimumSize = new Size(650, 40);
@@ -189,12 +193,12 @@
             textBox1.Size = new Size(650, 40);
             textBox1.TabIndex = 2;
             textBox1.TextChanged += EnableBtn;
-
             // 
             // LocBox
             // 
             LocBox.BackColor = Color.FromArgb(105, 100, 135);
             LocBox.Font = new Font("Verdana", 8.150944F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            LocBox.ForeColor = Color.White;
             LocBox.Location = new Point(8, 215);
             LocBox.MaximumSize = new Size(650, 40);
             LocBox.MinimumSize = new Size(650, 40);
@@ -205,11 +209,14 @@
             // 
             // DescBoxCEF
             // 
+            DescBoxCEF.AcceptsReturn = true;
             DescBoxCEF.BackColor = Color.FromArgb(105, 100, 135);
             DescBoxCEF.Font = new Font("Verdana", 8.150944F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            DescBoxCEF.ForeColor = Color.White;
             DescBoxCEF.Location = new Point(8, 57);
             DescBoxCEF.MaximumSize = new Size(650, 120);
             DescBoxCEF.MinimumSize = new Size(650, 120);
+            DescBoxCEF.Multiline = true;
             DescBoxCEF.Name = "DescBoxCEF";
             DescBoxCEF.Size = new Size(650, 120);
             DescBoxCEF.TabIndex = 0;
@@ -224,9 +231,23 @@
             CrtEVBtm.Name = "CrtEVBtm";
             CrtEVBtm.Size = new Size(214, 44);
             CrtEVBtm.TabIndex = 5;
-            CrtEVBtm.Text = "Utwórz";
+            CrtEVBtm.Text = "Zapisz";
             CrtEVBtm.UseVisualStyleBackColor = false;
             CrtEVBtm.Click += CrtEVBtm_Click;
+            // 
+            // DelBtn
+            // 
+            DelBtn.BackColor = Color.FromArgb(220, 140, 115);
+            DelBtn.Enabled = false;
+            DelBtn.Font = new Font("Verdana", 10.18868F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            DelBtn.ForeColor = Color.White;
+            DelBtn.Location = new Point(572, 455);
+            DelBtn.Name = "DelBtn";
+            DelBtn.Size = new Size(134, 44);
+            DelBtn.TabIndex = 6;
+            DelBtn.Text = "Usuń";
+            DelBtn.UseVisualStyleBackColor = false;
+            DelBtn.Click += DelBtn_Click;
             // 
             // CreateEventForm
             // 
@@ -234,6 +255,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(60, 50, 75);
             ClientSize = new Size(1072, 531);
+            Controls.Add(DelBtn);
             Controls.Add(CrtEVBtm);
             Controls.Add(splitContainer1);
             Controls.Add(panel1);
@@ -268,5 +290,6 @@
         private Label label3DATE_CEF;
         private Button OpnCalBtn;
         private TextBox DaBox;
+        private Button DelBtn;
     }
 }

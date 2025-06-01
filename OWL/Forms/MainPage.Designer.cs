@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             MainFlowPanel = new FlowLayoutPanel();
-            MainPagePanel = new Panel();
-            label1 = new Label();
-            EventDescMain = new Label();
-            EventTitleMain = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             MainLabel1 = new Label();
             MainLabel2 = new Label();
             MainPanel = new Panel();
@@ -42,15 +39,15 @@
             label3 = new Label();
             NameMainLabel = new Label();
             CreateEButton = new Button();
+            ReloadBtn = new Button();
             MainFlowPanel.SuspendLayout();
-            MainPagePanel.SuspendLayout();
             MainPanel.SuspendLayout();
             SuspendLayout();
             // 
             // MainFlowPanel
             // 
             MainFlowPanel.BackColor = Color.FromArgb(105, 100, 135);
-            MainFlowPanel.Controls.Add(MainPagePanel);
+            MainFlowPanel.Controls.Add(flowLayoutPanel1);
             MainFlowPanel.Location = new Point(12, 85);
             MainFlowPanel.Name = "MainFlowPanel";
             MainFlowPanel.Padding = new Padding(5);
@@ -58,51 +55,14 @@
             MainFlowPanel.TabIndex = 0;
             MainFlowPanel.Paint += MainFlowPanel_Paint;
             // 
-            // MainPagePanel
+            // flowLayoutPanel1
             // 
-            MainPagePanel.BackColor = Color.FromArgb(60, 50, 75);
-            MainPagePanel.Controls.Add(label1);
-            MainPagePanel.Controls.Add(EventDescMain);
-            MainPagePanel.Controls.Add(EventTitleMain);
-            MainPagePanel.Location = new Point(8, 8);
-            MainPagePanel.Name = "MainPagePanel";
-            MainPagePanel.Size = new Size(367, 116);
-            MainPagePanel.TabIndex = 0;
-            MainPagePanel.Paint += MainPagePanel_Visible;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 10.8113213F, FontStyle.Bold);
-            label1.ForeColor = Color.FromArgb(220, 140, 115);
-            label1.Location = new Point(3, 87);
-            label1.Name = "label1";
-            label1.Size = new Size(111, 18);
-            label1.TabIndex = 2;
-            label1.Text = "Localization";
-            // 
-            // EventDescMain
-            // 
-            EventDescMain.AutoSize = true;
-            EventDescMain.Font = new Font("Verdana", 8.811321F, FontStyle.Bold);
-            EventDescMain.Location = new Point(9, 31);
-            EventDescMain.Name = "EventDescMain";
-            EventDescMain.Size = new Size(89, 16);
-            EventDescMain.TabIndex = 1;
-            EventDescMain.Text = "Description";
-            EventDescMain.Click += EventDescMain_Click;
-            // 
-            // EventTitleMain
-            // 
-            EventTitleMain.AutoSize = true;
-            EventTitleMain.Font = new Font("Verdana", 14.8113213F, FontStyle.Bold);
-            EventTitleMain.ForeColor = Color.White;
-            EventTitleMain.Location = new Point(3, 0);
-            EventTitleMain.Name = "EventTitleMain";
-            EventTitleMain.Size = new Size(146, 26);
-            EventTitleMain.TabIndex = 0;
-            EventTitleMain.Text = "Event Title";
-            EventTitleMain.Click += EventTitle_Click;
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.Location = new Point(8, 8);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(812, 400);
+            flowLayoutPanel1.TabIndex = 0;
+            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
             // MainLabel1
             // 
@@ -208,13 +168,26 @@
             CreateEButton.BackColor = Color.FromArgb(220, 140, 115);
             CreateEButton.Font = new Font("Verdana", 12.2264156F, FontStyle.Bold);
             CreateEButton.ForeColor = Color.White;
-            CreateEButton.Location = new Point(543, 27);
+            CreateEButton.Location = new Point(621, 27);
             CreateEButton.Name = "CreateEButton";
-            CreateEButton.Size = new Size(303, 49);
+            CreateEButton.Size = new Size(225, 49);
             CreateEButton.TabIndex = 3;
             CreateEButton.Text = "Utwórz wydarzenie";
             CreateEButton.UseVisualStyleBackColor = false;
             CreateEButton.Click += CreateEButton_Click;
+            // 
+            // ReloadBtn
+            // 
+            ReloadBtn.BackColor = Color.FromArgb(220, 140, 115);
+            ReloadBtn.Font = new Font("Verdana", 8.150944F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            ReloadBtn.ForeColor = Color.White;
+            ReloadBtn.Location = new Point(530, 27);
+            ReloadBtn.Name = "ReloadBtn";
+            ReloadBtn.Size = new Size(91, 49);
+            ReloadBtn.TabIndex = 4;
+            ReloadBtn.Text = "Odśwież";
+            ReloadBtn.UseVisualStyleBackColor = false;
+            ReloadBtn.Click += ReloadBtn_Click;
             // 
             // MainPage
             // 
@@ -222,6 +195,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(120, 115, 150);
             ClientSize = new Size(1072, 531);
+            Controls.Add(ReloadBtn);
             Controls.Add(CreateEButton);
             Controls.Add(MainPanel);
             Controls.Add(MainLabel1);
@@ -230,8 +204,6 @@
             Name = "MainPage";
             Text = "OWL";
             MainFlowPanel.ResumeLayout(false);
-            MainPagePanel.ResumeLayout(false);
-            MainPagePanel.PerformLayout();
             MainPanel.ResumeLayout(false);
             MainPanel.PerformLayout();
             ResumeLayout(false);
@@ -241,10 +213,6 @@
         #endregion
 
         private FlowLayoutPanel MainFlowPanel;
-        private Panel MainPagePanel;
-        private Label EventTitleMain;
-        private Label EventDescMain;
-        private Label label1;
         private Label MainLabel1;
         private Label MainLabel2;
         private Panel MainPanel;
@@ -254,5 +222,7 @@
         private Label EmailMainLabel;
         private Button LogoutBtn;
         private Button CreateEButton;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Button ReloadBtn;
     }
 }

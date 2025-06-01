@@ -10,7 +10,7 @@ namespace OWL.Services
 
         public User? CurrentUser { get; private set; }
 
-        private Session() { }
+        public Session() { }
 
         public void Login(string username)
         {

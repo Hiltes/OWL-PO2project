@@ -140,9 +140,7 @@ C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.Forms.EventDetailsForm.resources
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.LoginPanel.resources
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.Forms.MainPage.resources
-C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.Forms.MyEventsForm.resources
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.Forms.RegisterPanel.resources
-C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.Forms.UserPage.resources
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.csproj.GenerateResource.cache
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.AssemblyInfoInputs.cache
@@ -157,3 +155,4 @@ C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\ref\OWL.dll
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.Properties.Resources.resources
 C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.Forms.Calendar.resources
+C:\Users\iktom\Desktop\Projects\OWL-PO2project\OWL\obj\Debug\net8.0-windows\OWL.EventTile.resources

@@ -28,11 +28,11 @@ namespace OWL
         {
 
             var currentLocation = this.Location;
-            
+
             this.Hide();
 
 
-            
+
             var Registerform = new RegisterPanel();
 
             Registerform.StartPosition = FormStartPosition.Manual;
@@ -57,7 +57,7 @@ namespace OWL
 
                     ClearForm();
                     AccesGranted(sender, e);
-                   
+
                 }
                 else
                 {
@@ -109,7 +109,7 @@ namespace OWL
 
         private void ValidateFields(object sender, EventArgs e)
         {
-            
+
             bool loginValid = !string.IsNullOrWhiteSpace(LoginBox.Text) && LoginBox.Text.Length >= 4;
             bool passwordValid = PasswordBox.Text.Length >= 8;
 
@@ -128,10 +128,10 @@ namespace OWL
             loginForm.Show();
         }
 
+        private void PasswordBox_TextChanged(object sender, EventArgs e)
+        {
 
-
-
-
+        }
     }
 
 
