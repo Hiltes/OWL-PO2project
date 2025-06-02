@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Configuration;
+using OWL.Data;
 using OWL.Models;
 
 namespace OWL

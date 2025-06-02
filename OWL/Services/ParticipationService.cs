@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using OWL.Data;
 using OWL.Models;
 
 namespace OWL.Services
@@ -15,9 +16,6 @@ namespace OWL.Services
             _dbContext = dbContext;
         }
 
-        /// <summary>
-        /// Pobiera listę udziałów (razem z danymi User) dla podanego EventId.
-        /// </summary>
         public List<Participation> GetParticipationsByEvent(int eventId)
         {
             return _dbContext.Participations
@@ -26,10 +24,6 @@ namespace OWL.Services
                              .ToList();
         }
 
-        /// <summary>
-        /// Dodaje nowy udział (jeśli jeszcze nie istnieje) dla danego użytkownika i wydarzenia.
-        /// Zwraca true, jeśli dodanie powiodło się, false jeśli użytkownik już jest zapisany.
-        /// </summary>
         public bool AddParticipation(int userId, int eventId)
         {
             try
@@ -43,7 +37,6 @@ namespace OWL.Services
                 {
                     UserId = userId,
                     EventId = eventId,
-                    // teraz używamy UtcNow, a klasa ma DateTimeOffset
                     RegistrationDate = DateTimeOffset.UtcNow
                 };
 
@@ -65,10 +58,6 @@ namespace OWL.Services
 
 
 
-        /// <summary>
-        /// Usuwa udział dla danego użytkownika i wydarzenia (jeśli istnieje).
-        /// Zwraca true, jeśli usunięcie powiodło się, false jeśli nie znaleziono wpisu.
-        /// </summary>
         public bool RemoveParticipation(int userId, int eventId)
         {
             var participation = _dbContext.Participations

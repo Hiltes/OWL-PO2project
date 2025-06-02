@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore;
+using OWL.Data;
 using OWL.Models;
 using OWL.Services;
 
@@ -123,7 +124,7 @@ namespace OWL.Forms
                         Width = 250,
                         Height = 230,
                         TitleText = ev.Title,
-                        DateText = ev.Date,
+                        DateText = ev.Date.ToString(),
                         LocationText = ev.Location,
                         DescriptionText = ev.Description.Length > 100
                             ? ev.Description.Substring(0, 100) + "…"

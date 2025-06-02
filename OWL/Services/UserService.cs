@@ -1,4 +1,5 @@
-﻿using OWL.Models;
+﻿using OWL.Data;
+using System;
 using System.Linq;
 
 namespace OWL.Services
@@ -17,18 +18,13 @@ namespace OWL.Services
             try
             {
                 var user = _context.Users.FirstOrDefault(u => u.Username == username);
-                if (user == null) return false;
-
-                return true;
+                return user != null;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Błąd logowania: {ex.Message}");
+                Console.WriteLine($"Błąd sprawdzania użytkownika: {ex.Message}");
                 return false;
             }
         }
-
-
-
     }
 }

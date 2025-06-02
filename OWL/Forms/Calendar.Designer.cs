@@ -72,7 +72,6 @@
             CalLabel2.Size = new Size(168, 22);
             CalLabel2.TabIndex = 3;
             CalLabel2.Text = "Wybrana data to:";
-            CalLabel2.Click += CalLabel2_Click;
             // 
             // ApplyButtonCal
             // 

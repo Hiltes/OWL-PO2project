@@ -9,7 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Nowy folder\" />
   </ItemGroup>
 
   <ItemGroup>

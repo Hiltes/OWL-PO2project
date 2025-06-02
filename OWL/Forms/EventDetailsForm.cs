@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore;
+using OWL.Data;
 using OWL.Models;
 using OWL.Services;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
@@ -40,7 +41,7 @@ namespace OWL.Forms
         {
             Event? thisEvent = _dbContext.Events.FirstOrDefault(ev => ev.EventId == _eventId);
             LocLabel.Text = thisEvent.Location.Trim();
-            EventDateLabel.Text = thisEvent.Date;
+            EventDateLabel.Text = thisEvent.Date.ToString();
             DescBox.Text = thisEvent.Description;
             NameLabel.Text = thisEvent.Title.Trim();
 
