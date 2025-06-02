@@ -59,7 +59,6 @@ using OWL.Services;
         LoginBox.Name = "LoginBox";
         LoginBox.Size = new Size(355, 40);
         LoginBox.TabIndex = 1;
-        LoginBox.TextChanged += LoginBox_TextChanged;
         // 
         // PasswordBox
         // 
@@ -69,7 +68,6 @@ using OWL.Services;
         PasswordBox.PasswordChar = '*';
         PasswordBox.Size = new Size(355, 40);
         PasswordBox.TabIndex = 2;
-        PasswordBox.TextChanged += PasswordBox_TextChanged;
         // 
         // LoginLabel
         // 
@@ -141,7 +139,6 @@ using OWL.Services;
         PasswordConfirmBox.PasswordChar = '*';
         PasswordConfirmBox.Size = new Size(355, 40);
         PasswordConfirmBox.TabIndex = 3;
-        PasswordConfirmBox.TextChanged += PasswordConfirmBox_TextChanged;
         // 
         // PasswordConfirmLabel
         // 
@@ -161,7 +158,6 @@ using OWL.Services;
         EmailBox.Name = "EmailBox";
         EmailBox.Size = new Size(355, 40);
         EmailBox.TabIndex = 0;
-        EmailBox.TextChanged += EmailBox_TextChanged;
         // 
         // EmailLabel
         // 
