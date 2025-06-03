@@ -59,21 +59,26 @@ namespace OWL.Migrations
 
             modelBuilder.Entity("OWL.Models.Participation", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("ParticipationId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ParticipationId"));
 
                     b.Property<int>("EventId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("ParticipationId")
                         .HasColumnType("integer");
 
                     b.Property<DateTimeOffset>("RegistrationDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.HasKey("UserId", "EventId");
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("ParticipationId");
 
                     b.HasIndex("EventId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Participations");
                 });

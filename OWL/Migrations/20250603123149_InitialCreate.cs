@@ -53,14 +53,15 @@ namespace OWL.Migrations
                 name: "Participations",
                 columns: table => new
                 {
+                    ParticipationId = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     UserId = table.Column<int>(type: "integer", nullable: false),
                     EventId = table.Column<int>(type: "integer", nullable: false),
-                    ParticipationId = table.Column<int>(type: "integer", nullable: false),
                     RegistrationDate = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Participations", x => new { x.UserId, x.EventId });
+                    table.PrimaryKey("PK_Participations", x => x.ParticipationId);
                     table.ForeignKey(
                         name: "FK_Participations_Events_EventId",
                         column: x => x.EventId,
@@ -84,6 +85,11 @@ namespace OWL.Migrations
                 name: "IX_Participations_EventId",
                 table: "Participations",
                 column: "EventId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Participations_UserId",
+                table: "Participations",
+                column: "UserId");
         }
 
         /// <inheritdoc />
