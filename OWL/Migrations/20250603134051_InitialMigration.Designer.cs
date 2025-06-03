@@ -12,8 +12,8 @@ using OWL.Data;
 namespace OWL.Migrations
 {
     [DbContext(typeof(OwlDbContext))]
-    [Migration("20250603123149_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250603134051_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -35,6 +35,9 @@ using OWL.Services;
         EmailLabel = new Label();
         BackToLoginButton = new Button();
         WelcomeLabel3 = new Label();
+        label1 = new Label();
+        label2 = new Label();
+        label3 = new Label();
         ((System.ComponentModel.ISupportInitialize)UpDesignElem).BeginInit();
         ((System.ComponentModel.ISupportInitialize)DownDesignElem).BeginInit();
         SuspendLayout();
@@ -44,7 +47,7 @@ using OWL.Services;
         RegisterButton.BackColor = Color.FromArgb(220, 140, 115);
         RegisterButton.Font = new Font("Verdana", 12.2264156F, FontStyle.Bold);
         RegisterButton.ForeColor = Color.White;
-        RegisterButton.Location = new Point(325, 420);
+        RegisterButton.Location = new Point(274, 437);
         RegisterButton.Name = "RegisterButton";
         RegisterButton.Size = new Size(263, 59);
         RegisterButton.TabIndex = 5;
@@ -169,12 +172,13 @@ using OWL.Services;
         EmailLabel.Size = new Size(87, 37);
         EmailLabel.TabIndex = 16;
         EmailLabel.Text = "Email";
+        EmailLabel.Click += EmailLabel_Click;
         // 
         // BackToLoginButton
         // 
         BackToLoginButton.FlatStyle = FlatStyle.System;
         BackToLoginButton.Font = new Font("Verdana", 12.2264156F, FontStyle.Bold);
-        BackToLoginButton.Location = new Point(771, 405);
+        BackToLoginButton.Location = new Point(772, 437);
         BackToLoginButton.Name = "BackToLoginButton";
         BackToLoginButton.Size = new Size(263, 58);
         BackToLoginButton.TabIndex = 6;
@@ -187,11 +191,46 @@ using OWL.Services;
         WelcomeLabel3.AutoSize = true;
         WelcomeLabel3.Font = new Font("Verdana", 14.2641506F, FontStyle.Bold);
         WelcomeLabel3.ForeColor = Color.White;
-        WelcomeLabel3.Location = new Point(797, 360);
+        WelcomeLabel3.Location = new Point(806, 409);
         WelcomeLabel3.Name = "WelcomeLabel3";
         WelcomeLabel3.Size = new Size(201, 25);
         WelcomeLabel3.TabIndex = 18;
         WelcomeLabel3.Text = "Masz już konto?";
+        // 
+        // label1
+        // 
+        label1.AutoSize = true;
+        label1.Font = new Font("Segoe UI Semibold", 8.150944F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 238);
+        label1.ForeColor = Color.FromArgb(220, 140, 115);
+        label1.Location = new Point(233, 235);
+        label1.Name = "label1";
+        label1.Size = new Size(304, 17);
+        label1.TabIndex = 19;
+        label1.Text = "Login powinien skłądać sie z conajmniej 4 znaków";
+        label1.Click += label1_Click;
+        // 
+        // label2
+        // 
+        label2.AutoSize = true;
+        label2.Font = new Font("Segoe UI Semibold", 8.150944F, FontStyle.Bold | FontStyle.Italic);
+        label2.ForeColor = Color.FromArgb(220, 140, 115);
+        label2.Location = new Point(233, 388);
+        label2.Name = "label2";
+        label2.Size = new Size(298, 17);
+        label2.TabIndex = 20;
+        label2.Text = "Hasło powinno składać się z minimum 8 znaków ";
+        label2.Click += label2_Click;
+        // 
+        // label3
+        // 
+        label3.AutoSize = true;
+        label3.Font = new Font("Segoe UI Semibold", 8.150944F, FontStyle.Bold | FontStyle.Italic);
+        label3.ForeColor = Color.FromArgb(220, 140, 115);
+        label3.Location = new Point(233, 403);
+        label3.Name = "label3";
+        label3.Size = new Size(237, 17);
+        label3.TabIndex = 21;
+        label3.Text = "w tym jednej cyfry i znaku specjalnego";
         // 
         // RegisterPanel
         // 
@@ -199,6 +238,9 @@ using OWL.Services;
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.FromArgb(120, 115, 150);
         ClientSize = new Size(1072, 531);
+        Controls.Add(label3);
+        Controls.Add(label2);
+        Controls.Add(label1);
         Controls.Add(WelcomeLabel3);
         Controls.Add(BackToLoginButton);
         Controls.Add(EmailLabel);
@@ -241,4 +283,7 @@ using OWL.Services;
         private Label EmailLabel;
         private Button BackToLoginButton;
         private Label WelcomeLabel3;
-    }
+    private Label label1;
+    private Label label2;
+    private Label label3;
+}

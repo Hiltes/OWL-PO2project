@@ -30,14 +30,14 @@ namespace OWL.Forms
 
             try
             {
-                bool success = _authService.RegisterUser( LoginBox.Text.Trim(), EmailBox.Text.Trim(), PasswordBox.Text );
+                bool success = _authService.RegisterUser(LoginBox.Text.Trim(), EmailBox.Text.Trim(), PasswordBox.Text);
 
 
                 if (success)
                 {
                     MessageBox.Show("Rejestracja zakończona pomyślnie!", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                
+
 
                     ClearForm();
 
@@ -58,11 +58,11 @@ namespace OWL.Forms
 
         private void ClearForm()
         {
-                EmailBox.Text = string.Empty;
-    LoginBox.Text = string.Empty;
-    PasswordBox.Text = string.Empty;
-    PasswordConfirmBox.Text = string.Empty;
-    RegisterButton.Enabled = false;
+            EmailBox.Text = string.Empty;
+            LoginBox.Text = string.Empty;
+            PasswordBox.Text = string.Empty;
+            PasswordConfirmBox.Text = string.Empty;
+            RegisterButton.Enabled = false;
         }
 
         private bool ValidateRegistration()
@@ -77,7 +77,7 @@ namespace OWL.Forms
                 return false;
             }
 
-            if (PasswordBox.Text.Length < 8)
+            if (PasswordBox.Text.Length < 8 && !Regex.IsMatch(PasswordBox.Text, @"(?=.*\d)(?=.*[^\w\s])"))
             {
                 return false;
             }
@@ -132,5 +132,19 @@ namespace OWL.Forms
             loginForm.Show();
         }
 
+        private void EmailLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

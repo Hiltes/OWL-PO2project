@@ -45,12 +45,11 @@ namespace OWL.Data
                 builder.Property(u => u.Email)
                        .IsRequired();
 
-                // Mapowanie na prywatne pole _organizedEvents
+
                 builder.Metadata
                        .FindNavigation(nameof(User.OrganizedEvents))!
                        .SetPropertyAccessMode(PropertyAccessMode.Field);
 
-                // Mapowanie na prywatne pole _participations
                 builder.Metadata
                        .FindNavigation(nameof(User.Participations))!
                        .SetPropertyAccessMode(PropertyAccessMode.Field);
@@ -81,7 +80,6 @@ namespace OWL.Data
                        .HasForeignKey(e => e.OrganizerId)
                        .OnDelete(DeleteBehavior.Restrict);
 
-                // Mapowanie na prywatne pole _participants
                 builder.Metadata
                        .FindNavigation(nameof(Event.Participants))!
                        .SetPropertyAccessMode(PropertyAccessMode.Field);
@@ -92,7 +90,7 @@ namespace OWL.Data
             // -------------------
             modelBuilder.Entity<Participation>(builder =>
             {
-                // Używamy jednoznacznego klucza ParticipationId
+
                 builder.HasKey(p => p.ParticipationId);
 
                 builder.HasOne(p => p.User)
