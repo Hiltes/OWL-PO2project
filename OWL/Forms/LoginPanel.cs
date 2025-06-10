@@ -8,6 +8,9 @@ namespace OWL
 {
     public partial class LoginPanel : Form
     {
+        private Dictionary<Control, float> originalFontSizes = new Dictionary<Control, float>();
+        private Size originalFormSize;
+
         private readonly AuthService _authService;
 
         public LoginPanel()
@@ -16,10 +19,14 @@ namespace OWL
 
             _authService = new AuthService();
 
+
+
             // Pod³¹czamy obs³ugê przycisku i walidacjê pól
             LoginButton.Click += LoginButton_Click;
             LoginBox.TextChanged += ValidateFields;
             PasswordBox.TextChanged += ValidateFields;
+            this.MinimumSize = new Size(1088, 572);
+            this.AutoScaleMode = AutoScaleMode.Font;
         }
 
         /// <summary>
@@ -161,6 +168,21 @@ namespace OWL
         // i tak pod³¹czone jest do PasswordBox.TextChanged)
         private void PasswordBox_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void WelcomeLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginPanel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

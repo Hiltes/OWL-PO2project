@@ -121,17 +121,15 @@
             // 
             // DescBox
             // 
-            DescBox.Anchor = AnchorStyles.Top;
             DescBox.BackColor = Color.FromArgb(105, 100, 135);
+            DescBox.Dock = DockStyle.Fill;
             DescBox.ForeColor = Color.White;
-            DescBox.Location = new Point(44, 161);
-            DescBox.Margin = new Padding(20, 3, 3, 20);
-            DescBox.MaximumSize = new Size(1000, 120);
-            DescBox.MinimumSize = new Size(1000, 120);
+            DescBox.Location = new Point(10, 168);
+            DescBox.Margin = new Padding(10);
             DescBox.Multiline = true;
             DescBox.Name = "DescBox";
             DescBox.ReadOnly = true;
-            DescBox.Size = new Size(1000, 120);
+            DescBox.Size = new Size(1052, 112);
             DescBox.TabIndex = 3;
             DescBox.TextChanged += textBox1_TextChanged;
             // 
@@ -209,15 +207,18 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AllowUserToResizeColumns = false;
             dataGridView1.AllowUserToResizeRows = false;
-            dataGridView1.Anchor = AnchorStyles.Top;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridView1.BackgroundColor = Color.FromArgb(105, 100, 135);
             dataGridView1.ColumnHeadersHeight = 25;
-            dataGridView1.Location = new Point(15, 293);
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(10, 300);
+            dataGridView1.Margin = new Padding(10);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 45;
             dataGridView1.ScrollBars = ScrollBars.None;
-            dataGridView1.Size = new Size(1041, 115);
+            dataGridView1.Size = new Size(1052, 104);
             dataGridView1.TabIndex = 4;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -275,7 +276,6 @@
             ClientSize = new Size(1072, 531);
             Controls.Add(tableLayoutPanel1);
             Font = new Font("Verdana", 8.150944F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 2, 4, 2);
             Name = "EventDetailsForm";
             Text = "OWL";

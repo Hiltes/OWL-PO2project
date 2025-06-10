@@ -237,12 +237,13 @@ namespace OWL.Forms
         {
             _db.Events.Remove(thisEvent);
             _db.SaveChanges();
-            MessageBox.Show("Usunięto Wydarzenie!","Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            CreateEventForm.ActiveForm.Close();        }
+            MessageBox.Show("Usunięto Wydarzenie!", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            CreateEventForm.ActiveForm.Close();
+        }
 
         private void ActivateDel_Btn()
         {
-            if(EventId != 0)
+            if (EventId != 0)
             {
                 DelBtn.Enabled = true;
             }
@@ -254,11 +255,26 @@ namespace OWL.Forms
             DescBoxCEF.Text = thisEvent.Description.Trim();
             LocBox.Text = thisEvent.Location.Trim();
             DaBox.Text = thisEvent.Date;
-            if(LocBox.Text == "Wydarzenie zdalne")
+            if (LocBox.Text == "Wydarzenie zdalne")
             {
                 WithoutLocCheckbox.Checked = true;
                 LocBox.Enabled = false;
             }
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

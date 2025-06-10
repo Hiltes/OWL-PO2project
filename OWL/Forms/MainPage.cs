@@ -153,5 +153,10 @@ namespace OWL.Forms
         {
             LoadEventTiles(); // Odświeżenie po kliknięciu przycisku
         }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
